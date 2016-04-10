@@ -2,24 +2,38 @@
 layout: default
 ---
 
-<div class="home">
+<div class='container'>
+  <div class='row'>
+    <div class='col-sm-3 col-sm-offset-2 col-xs-6 col-xs-offset-3'>
+      <img src='assets/i_love_less.jpg' class='img-responsive img-circle' alt='Profile-picture' />
+    </div>
+    <div class='col-sm-4 col-sm-offset-1'>
+      <h2>Willkommen</h2>
+        <p>This is my website, portfolio and blog. Also a playground and a side project.</p>
+        <p>You can find me here:</p>
+        <ul class="list-unstyled">
+          <li><i class="glyphicon glyphicon-asterisk"></i> github</li>
+          <li><i class="glyphicon glyphicon-asterisk"></i> twitter</li>
+        </ul>
+    </div>
+  </div>
 
-  <!-- <img class="big-logo" src="/assets/i love less.jpg"></img> -->
+  <div 
+  
+  <div class='row'>
+    <div class="col-sm-12 text-center">
+      <h1>Blog</h1>
+    </div>
 
-  <h1 class="page-heading">Blog</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
+    <div class="col-sm-6 col-sm-offset-3">
+      <ul class='list-unstyled'>
+        {% for post in site.posts %}
+          <li>
+            <a class='' href="{{ post.url | prepend: site.baseurl }}"><h4>{{ post.title }} <small>({{ post.date | date: "%b %-d, %Y" }})</small></h4></a>
+            <p>{{ post.excerpt | strip_html }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
