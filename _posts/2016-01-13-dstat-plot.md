@@ -14,6 +14,7 @@ This ruby script uses GNUPlot through a ruby wrapper [(ruby_gnuplot)](https://gi
 You need an installation of the ruby programming language, X11, GNUPlot and the ruby_gnuplot gem. The gems csv and optparse are part of the ruby standard library.
 
 To install on a Mac do the following steps:
+
 ```
     1. Install XQuartz from here:
         http://xquartz.macosforge.org/landing/
@@ -24,6 +25,7 @@ To install on a Mac do the following steps:
 ```
 
 For linux the procedure is
+
 ```
 1. Install gnuplot (your distribution might come with it though)
     sudo apt-get install gnuplot

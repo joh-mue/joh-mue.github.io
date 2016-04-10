@@ -17,7 +17,7 @@ twitter_username: joh_mue
 github_username:  joh-mue
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 kramdown:
   input: GFM

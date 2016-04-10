@@ -12,25 +12,23 @@ layout: default
         <p>This is my website, portfolio and blog. Also a playground and a side project.</p>
         <p>You can find me here:</p>
         <ul class="list-unstyled">
-          <li><i class="glyphicon glyphicon-asterisk"></i> github</li>
+          <li>{<i class="glyphicon glyphicon-asterisk"></i> github}</li>
           <li><i class="glyphicon glyphicon-asterisk"></i> twitter</li>
         </ul>
     </div>
   </div>
-
-  <div 
   
   <div class='row'>
-    <div class="col-sm-12 text-center">
+    <div class="col-sm-4 col-sm-offset-6">
       <h1>Blog</h1>
     </div>
 
-    <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-sm-4 col-sm-offset-6">
       <ul class='list-unstyled'>
         {% for post in site.posts %}
           <li>
             <a class='' href="{{ post.url | prepend: site.baseurl }}"><h4>{{ post.title }} <small>({{ post.date | date: "%b %-d, %Y" }})</small></h4></a>
-            <p>{{ post.excerpt | strip_html }}</p>
+            <!-- <p>{{ post.excerpt | strip_html }}</p> -->
           </li>
         {% endfor %}
       </ul>
