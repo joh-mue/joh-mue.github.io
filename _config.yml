@@ -11,6 +11,9 @@ email: mue.johannes@icloud.com
 description: > # this means to ignore newlines until "baseurl:"
   A site full of stuff I did, like and think about. So it's basically empty.
   But also a little playground to try stuff.
+
+google_analytics:   UA-76258012-1
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://joh-mue.github.io" # the base hostname & protocol for your site
 twitter_username: joh_mue
