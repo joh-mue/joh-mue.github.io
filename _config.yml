@@ -24,3 +24,8 @@ markdown: redcarpet
 
 kramdown:
   input: GFM
+
+collections:
+  portfolio:
+    output: true
+    foo: bar

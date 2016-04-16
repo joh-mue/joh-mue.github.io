@@ -4,23 +4,19 @@ title: Blog
 permalink: /blog/
 ---
 
-<div class="home">
-  <div class='container'>
-    <div class='row'>
-      <div class='col-sm-4 col-sm-offset-4'>
-        <h1>Blog</h1>
-      </div>
-
-      <div class='col-sm-4 col-sm-offset-4'>
-        <ul class='list-unstyled'>
-          {% for post in site.posts %}
-            <li>
-              <a class='' href='{{ post.url | prepend: site.baseurl }}'><h4>{{ post.title }} <small>({{ post.date | date: "%b %-d, %Y" }})</small></h4></a>
-              <p>{{ post.excerpt | strip_html }}</p>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
+<div class='container'>
+  <div class='col-sm-4 col-sm-offset-4'>
+    <h1>Blog</h1>
   </div>
-</div>
+
+  <div class='col-sm-4 col-sm-offset-4'>
+    <ul class='list-unstyled'>
+      {% for post in site.posts %}
+        <li>
+          <a class='' href='{{ post.url | prepend: site.baseurl }}'><h4>{{ post.title }} <small>({{ post.date | date: "%b %-d, %Y" }})</small></h4></a>
+          <p>{{ post.excerpt | strip_html }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div><!-- col-sm-4 col-sm-offset-4 -->
+</div><!-- container -->
