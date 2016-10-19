@@ -20,7 +20,7 @@ twitter_username: joh_mue
 github_username:  joh-mue
 
 # Build settings
-markdown: redcarpet
+# markdown: redcarpet
 
 kramdown:
   input: GFM
