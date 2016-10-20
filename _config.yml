@@ -29,3 +29,6 @@ collections:
   portfolio:
     output: true
     foo: bar
+
+gems:
+  - jekyll-sitemap
