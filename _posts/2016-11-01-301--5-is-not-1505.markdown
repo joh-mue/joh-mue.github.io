@@ -1,0 +1,25 @@
+---
+title: 3.01 * 5 is not 15.05
+layout: post
+categories: coding
+---
+
+At least not when you use a float because they are only approximations.
+
+Try it for yourself in irb
+
+```
+$ irb
+> 3.01 * 5
+=> 15.049999999999999
+```
+
+or with java
+
+```
+$ javarepl
+java> 3.01*5
+java.lang.Double res0 = 15.049999999999999
+```
+
+So this is not really news to probably the majority of people but I feel like it is important to keep in mind and be aware of. It might be okay in many cases but there are those few situations where it is not good enough and those are also the cases where it hurts. Just think about money. You'd naturally be tempted to use a float but especially when you are dealing with larger numbers it is probably going to be a problem when you are not precise and transactions are a little too small or a little to big.
