@@ -15,6 +15,7 @@ permalink: /blog/
         <li>
           <a class='' href='{{ post.url | prepend: site.baseurl }}'><h4>{{ post.title }} <small>({{ post.date | date: "%b %-d, %Y" }})</small></h4></a>
           <p>{{ post.excerpt | strip_html }}</p>
+          <br>
         </li>
       {% endfor %}
     </ul>
