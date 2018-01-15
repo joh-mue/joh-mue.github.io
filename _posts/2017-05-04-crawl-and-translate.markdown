@@ -1,15 +1,16 @@
 ---
-title: crawl-and-translate
+title: Crawl and Translate with Google
 layout: post
+tags: ruby
 ---
 
-Crawl and Translate
+Something that I've been meaning to do for quite some time finally happened: I wrote a little, very specific crawler to get some text off of a website and then immediately translated the result using the very convenient google-translate sdk.
 
-Something that I've been meaning to do for quite some time finally happened: I wrote a little, very specific crawler to get some text off of a website and then immediately translated the result using the very convenient google-translate sdk. I did it to help my father with some research and it's not 100% refactored but it was quite some fun to make.
+I did it to help my father with some research and it's not 100% refactored but it was quite some fun to play around with.
 
 This is the crawler that looks for specific fields on a number of websites, the URLs of which are saves in a simple textfile. the result is written to a csv file.
 
-```ruby
+{% highlight ruby %}
 require 'nokogiri'
 require 'open-uri'
 require 'csv'
@@ -45,7 +46,7 @@ CSV.open("content-2.csv", "wb") do |csv|
   lines.each { |line| csv << line }
 end
 
-```
+{% endhighlight %}
 
 The translation script takes the csv as input and simply invokes the google translate api and writes back the results. Fast simple and efficient.
 
