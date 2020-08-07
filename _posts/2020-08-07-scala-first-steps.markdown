@@ -1,10 +1,8 @@
 ---
-title: scala-first-steps
+title: Scala Repl First Steps
 layout: post
 categories: programming, scala
 ---
-
-# Baby steps
 
 Sometimes even the most basic things are quite hard in a new programming language but so basic that they aren't really explained anywhere.
 
