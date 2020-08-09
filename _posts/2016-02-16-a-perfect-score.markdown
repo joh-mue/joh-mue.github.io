@@ -1,7 +1,7 @@
 ---
 title: A Perfect Score
 layout: post
-categories: joke, games, math
+tags: joke, games, math
 ---
 
 I got a perfect score on my first round of [guessthecorelation.com](guessthecorelation.com).

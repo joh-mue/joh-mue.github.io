@@ -1,7 +1,7 @@
 ---
 title: Getting started with programming for AWS, Lambda & S3
 layout: post
-categories: tech, aws, guide
+tags: tech, aws, guide
 ---
 
 It was time to dive into the jungle that is Amazon Web Services and since I did not find a good guide for my level of expertise I figured I should write one for others that that may come after me.

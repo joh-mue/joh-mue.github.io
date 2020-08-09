@@ -1,7 +1,7 @@
 ---
 title: Colons are troubling me - in python
 layout: post
-categories: programming, python
+tags: programming, python
 ---
 
 ```

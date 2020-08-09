@@ -1,7 +1,7 @@
 ---
 title: Scala Repl First Steps
 layout: post
-categories: programming, scala
+tags: programming, scala
 ---
 
 Sometimes even the most basic things are quite hard in a new programming language but so basic that they aren't really explained anywhere.

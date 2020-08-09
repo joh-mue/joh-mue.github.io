@@ -1,7 +1,7 @@
 ---
 title: 3.01 * 5 is not 15.05
 layout: post
-categories: coding
+tags: coding
 ---
 
 At least not when you use a float because they are only approximations.

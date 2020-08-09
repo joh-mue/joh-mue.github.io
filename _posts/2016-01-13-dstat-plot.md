@@ -2,7 +2,7 @@
 layout: post
 title:  "Dstat-Plot!"
 date:   2016-01-13 01:01:00 +0100
-categories: tech
+tags: tech
 ---
 
 ## dstat monitor plotting script

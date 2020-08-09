@@ -1,7 +1,7 @@
 ---
 title: Don't use StringTokenizer
 layout: post
-categories: programming, java
+tags: programming, java
 ---
 
 So here is something I did not know yet.
