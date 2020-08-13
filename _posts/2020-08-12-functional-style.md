@@ -23,7 +23,7 @@ for (object <- objectList) {
     signalList += object._2
 }
 ```
-... you could write a more functional version:
+... you could write this more functional version with the same functionality:
 
 ```Java
 #create a list of tuples that we are going to work with
@@ -32,3 +32,17 @@ val objectList = Array(("0", "a"), ("1", "b"))
 val signalList: Set[String] = objectList.flatMap(obj => Array(obj._1, obj._2))
                                         .toSet
 ```
+
+---
+
+#### From the [scala docs](https://www.scala-lang.org/api/2.13.3/scala):
+
+**FlatMap**
+
+```
+def flatMap[BS, B](f: (T) => BS)(implicit asIterable: (BS) => collection.Iterable[B], m: ClassTag[B]): Array[B]
+```
+
+**Implicit:** This member is added by an implicit conversion from Array[T] toArrayOps[T] performed by method genericArrayOps in scala.Predef.
+
+**Definition Classes:** [ArrayOps](https://www.scala-lang.org/api/2.13.3/scala/collection/ArrayOps.html)
